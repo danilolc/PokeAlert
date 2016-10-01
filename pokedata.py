@@ -8,8 +8,7 @@ import os
 import pokefinder
 
 #Diretório do PokeAlert
-HOME = os.getenv("HOME")
-MAIN_PATH = HOME+'/Pokealert/'
+MAIN_PATH = os.path.dirname(os.path.abspath(__file__)) + "/"
 print (MAIN_PATH)
 
 #Coloque as coordenadas
