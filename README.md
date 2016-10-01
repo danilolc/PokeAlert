@@ -1,10 +1,8 @@
-# Pokealert
-Alerta sobre Pokémon próximos.
+# PokeAlert
+Use the Ubuntu notify to show the nearby Pokémon.
 
-Este é um programa feito em Python que pesquisa automaticamente por Pokémon proxímos a você no Pokémon GO.
+It uses the fastpokemap.se servers.
 
-Ele utiliza os servidores de fastpokemap.se.
+Tested on Ubuntu 16.04.
 
-Testado no Ubuntu 16.04.
-
-Para rodar, baixe as bibliotecas do Python e execute "pokealert.py".
+To run, download the Python libraryes and execute "pokealert.py".
