@@ -9,7 +9,9 @@ connect = False
 
 headers={'Host': 'api.fastpokemap.se', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0',
 'Accept': 'application/json, text/javascript, */*; q=0.01', 'Accept-Language': 'en-US,en;q=0.5',
-'Accept-Encoding':'gzip,deflate,br','Origin':'https://fastpokemap.se',
+'Accept-Encoding':'gzip,deflate,br',
+'Referer':'https://fastpokemap.se',
+'Origin':'https://fastpokemap.se',
 'DTN':'1','Connection':'keep-alive'}
 
 try:
@@ -23,7 +25,7 @@ def getdata(lat,lng):
 	print ("Pegando dados")	
 	try:
 		data = session.post(
-			url='https://api.fastpokemap.se/?key=allow-all&ts=0&lat=' + str(lat) + '&lng=' + str(lng),
+			url='https://api.fastpokemap.se/?lat=' + str(lat) + '&lng=' + str(lng),
 			data={},
 			headers=headers)
 	except:
