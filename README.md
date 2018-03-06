@@ -1,4 +1,9 @@
 # PokeAlert
+
+```diff
+- This app no longer works, the FastPokemap server is down. 
+```
+
 Use the Ubuntu notify to show the nearby Pokémon.
 
 It uses the fastpokemap.se servers.
